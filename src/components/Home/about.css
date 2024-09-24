@@ -1,0 +1,53 @@
+    @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Spicy+Rice&display=swap');
+  ._teacherName {
+    font-family: "Permanent Marker", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  @import url('https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&family=Permanent+Marker&family=Spicy+Rice&display=swap');
+  ._title {
+    font-family: "Oleo Script", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  } 
+.answer{
+    border-left: 2px double rgb(234, 177, 72);
+}
+._answer{
+    border-right: 2px double rgb(234, 177, 72);
+    padding-right: 10px;
+}
+.offer{
+    border: 2px solid rgb(232, 221, 202);
+    transition: all .3s;
+}
+.offer:hover{
+    box-shadow: 2px 3px 5px rgb(188, 186, 188);
+    transform: translateY(-3px);
+}
+.i{
+    color: blueviolet;
+   animation: logo 2s linear infinite ;
+   margin-bottom: 3%;
+   font-size: 20px;
+   filter:drop-shadow(1px 2px 3px rgb(208, 145, 247)) ;
+
+}
+@keyframes logo {
+    0%{
+       
+        transform: scale(1.1);
+    }
+    50%{
+    
+        transform: scale(1.4);
+    }
+    75%{
+        transform: scale(1.2); 
+    }
+    100%{
+      
+        transform: scale(1.1);
+    }
+}

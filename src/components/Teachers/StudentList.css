@@ -1,0 +1,23 @@
+._hover{
+    transform: scale(1);  
+    transition: all .4s;
+    word-wrap: break-word;
+}
+._hover:hover{
+ transform: scale(1.1); 
+
+}
+.delete_icon{
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+    color: rgb(244, 134, 134);
+    transition: all .3s;
+}
+.delete_icon:hover{
+    color: red;
+    transform: scale(1.1);
+}
+._overflow{
+    overflow: hidden;
+}

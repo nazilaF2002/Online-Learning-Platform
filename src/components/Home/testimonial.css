@@ -1,0 +1,20 @@
+
+ .img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 5px solid purple;
+    padding: 5px;
+ }
+.content{
+    position: relative;
+    transition: all .3s;
+    border: 2px solid rgb(232, 221, 202);
+    width: 75%;
+}
+.content:hover{
+    box-shadow: 5px 7px 10px rgb(139, 138, 136);
+}
+.name_color{
+    color: blueviolet;
+}

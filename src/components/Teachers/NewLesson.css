@@ -1,0 +1,18 @@
+.newlessonBS{
+    position: absolute;
+    bottom: 10%;
+    right: 5%;
+}
+.newlessonBC{
+    position: absolute;
+    bottom: 10%;
+    right: 12%;
+}
+.newLessoF{
+    position: relative;
+}
+.buttom_direction{
+    display: flex;
+    justify-content: end;
+    gap: 5px;
+}

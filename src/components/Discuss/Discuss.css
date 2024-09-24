@@ -1,0 +1,18 @@
+._Question{
+color: red;
+height: 15%;
+position: relative;
+left: 10%;
+}
+._User{
+  color: gainsboro;
+  height: 15%;
+  position: relative;
+  top: 10%;
+  left: 20%;
+}
+._comment{
+    color: rgb(255, 174, 0);
+    position: relative;
+    left: 50%;
+}

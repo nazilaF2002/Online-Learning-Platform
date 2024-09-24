@@ -1,7 +1,11 @@
 .App {
   text-align: center;
+  /* color: rgb(128, 164, 138); */
 }
-
+._overflow{
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;

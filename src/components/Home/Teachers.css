@@ -1,0 +1,10 @@
+.teachers_social_icons{
+    color: rgb(93, 31, 152);
+    font-size:22px;
+    transition: all .2s;
+    text-decoration: none;
+}
+.teachers_social_icons:hover{
+    color: blue;
+    transform: scale(1.3);
+}

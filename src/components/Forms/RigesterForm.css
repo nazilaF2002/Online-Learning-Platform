@@ -1,0 +1,13 @@
+#submit_btn_color{
+    background-color: rgb(129, 57, 185);
+    color: white;
+    transition: all .3s;
+
+}
+#submit_btn_color:hover{
+background-color:#53318a;
+color: white;
+}
+.border_color{
+    border-color: #ba94f7;
+}

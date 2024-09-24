@@ -1,0 +1,98 @@
+
+.lessonsbox{
+    list-style-type: none;
+    /* width: 80%; */
+    margin: 0px;
+    padding: 0px;
+ 
+}
+._mLi{
+    margin: 0px;
+}
+.lesson_link{
+    color: blueviolet;
+    text-decoration: none;
+    transition: all .4;
+}
+._display{
+    display: inline-block;
+}
+.lesson_link:hover{
+    filter:drop-shadow(1px 2px 3px rgb(208, 145, 247)) ;
+}
+/* .lesson_li{
+    width: 80%;
+} */
+.lesson_li:hover{
+    box-shadow: 1px 2px 3px rgb(154, 151, 151);
+    transform: translateY(-4px);
+}
+.search_inp{
+    width: 250px;
+    border-radius: 20px;
+    border:  1px solid rgb(84, 12, 178);
+    outline:none ;
+    /* border-color: ; */
+}
+.search_inp:focus{
+    outline:  1px solid rgb(117, 225, 135);
+    border: none;
+}
+/* @media screen and (max-width:800px) {
+    body{
+       padding: 0%;
+    }
+} */
+._newlesson{
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: end;
+}
+@media screen and (max-width:500px){
+  ._newlesson{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+  }  
+  ._newlessonF{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+  }
+}
+.btn_style{
+    width: 150px;
+    padding: 10px 0;
+    border: 2px solid rgb(122, 14, 223);
+    background-color: rgb(122, 14, 223);
+    color: azure;
+    border-radius: 5px;
+    transition: all .4s;
+}
+.btn_style:hover{
+    background-color: transparent;
+    color: black;
+}
+._border{
+    border: 1px solid transparent;
+    /* overflow: hidden; */
+}
+.teacher_icon_lesson{
+    display: flex;
+    justify-content: end;
+    gap: 0px 20px;
+}
+.Dlink{
+    color: gray;
+    transition: all .3s;
+}
+.Dlink:hover{
+  color: red;
+}
+.Elink{
+    color: gray;
+    transition: all .3s;
+}
+.Elink:hover{
+    color: orange;
+}

@@ -1,0 +1,10 @@
+.photo_change{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+._IMG{
+    object-fit: fill;
+    padding: 5px;
+    border:5px solid rgb(199, 150, 240);
+}

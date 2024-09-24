@@ -1,0 +1,8 @@
+.image_profile{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0;
+    border: 2px solid white;
+}
