@@ -1,4 +1,3 @@
-
 import { useEffect, useState } from "react";
 import { Link } from 'react-router-dom';
 import axios from "axios";
@@ -7,15 +6,13 @@ import { faCertificate } from "@fortawesome/free-solid-svg-icons";
 import CRoot from "./CRoot";
 
 export default function Courses() {
-    const [courses, setCourses] = useState([]); // Initialize as an empty array
-
+    const [courses, setCourses] = useState([]); 
     useEffect(() => {
         const fetchCourses = async () => {
             try {
                 const response = await axios.get(`http://localhost:5000/courses`);
-                setCourses(response.data); // Ensure your backend sends this
+                setCourses(response.data); 
                 console.log(response.data);
-                
             } catch (error) {
                 console.error('Error fetching student data:', error);
             }

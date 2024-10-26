@@ -8,7 +8,8 @@ export default function CoursesNav(){
     return(
     <nav className="navbar   mb-5 navbar-expand-lg navbar-dark fixed-top" style={{backgroundColor:"rgb(71, 19, 107)"}}>
   <div className="container-fluid">
-    <a className="navbar-brand text-white" href="#"><img src={logo} alt=""style={{width:"40px",height:"40px",borderRadius:'50%'}} /> Online-Tech</a>
+    <a className="navbar-brand text-white" href="#"> <b>Online-Tech</b></a>
+    {/* <a className="navbar-brand text-white" href="#"><img src={logo} alt=""style={{width:"40px",height:"40px",borderRadius:'50%'}} /> Online-Tech</a> */}
     <button className="navbar-toggler  " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon "></span>
     </button>
