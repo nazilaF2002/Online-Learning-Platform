@@ -34,12 +34,10 @@
     cursor: pointer;
     font-size: 16px;
     color: #000;
-    /* color: #007bff; */
 }
 .filter-button._active {
     text-decoration: underline; 
     font-weight: bold;
-     /* background-color: rgb(71, 19, 107); Active background color */
     color: rgb(160, 63, 230); /* Active text color */
     border-radius:10%;
     

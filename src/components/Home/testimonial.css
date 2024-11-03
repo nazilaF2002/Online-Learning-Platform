@@ -18,3 +18,15 @@
 .name_color{
     color: blueviolet;
 }
+.carousel-indicators button {
+    background-color: purple !important; 
+    border: none; 
+    opacity: 0.5; 
+    transition: opacity 0.3s;
+}
+.carousel-indicators button:hover {
+    opacity: 1;
+}
+.carousel-indicators .active {
+    background-color: darkviolet;
+}

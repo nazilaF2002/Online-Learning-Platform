@@ -6,13 +6,15 @@ export default function Carousel(){
     <div id="carouselExampleAutoplaying" className="carousel slide p-relative" data-bs-ride="carousel" style={{width:'100%',height:'50%'}}>
     <div className="carousel-inner">
       <div className="carousel-item active">
-        <img src={programming} className="d-block w-100" alt="..." style={{width:'100vw',height:'90vh'}}/>
+        <img src={programming} className="d-block w-100 _img_height" alt="..." />
+        {/* <img src={programming} className="d-block w-100 _img_height" alt="..." style={{width:'100vw',height:'90vh'}}/> */}
         <div className="overlay text-center">
           <h4 className='text-white text-wrap w-75 _teacherName'>Start a new <u> journey </u>  today with <u>the best</u>  online tutors !</h4>
         </div>
       </div>
       <div className="carousel-item">
-        <img src={computer} className="d-block w-100" alt="..." style={{width:'100vw',height:'90vh'}}/>
+        <img src={computer} className="d-block w-100 _img_height" alt="..." />
+        {/* <img src={computer} className="d-block w-100 _img_height" alt="..." style={{width:'100vw',height:'90vh'}}/> */}
         <div className="overlay text-center ">
           <h4 className='text-white text-wrap w-75 _teacherName'>Education Opens up the Mind !</h4>
         </div>

@@ -1,28 +1,30 @@
-
 .lessonsbox{
     list-style-type: none;
-    /* width: 80%; */
     margin: 0px;
-    padding: 0px;
- 
+    padding: 0px; 
 }
 ._mLi{
     margin: 0px;
+    padding: 0px;
 }
 .lesson_link{
     color: blueviolet;
     text-decoration: none;
     transition: all .4;
 }
+
 ._display{
     display: inline-block;
+    font-size: 1em;
+}
+@media (max-width:500px){
+    ._display{
+        font-size: 0.60em;
+    }
 }
 .lesson_link:hover{
     filter:drop-shadow(1px 2px 3px rgb(208, 145, 247)) ;
 }
-/* .lesson_li{
-    width: 80%;
-} */
 .lesson_li:hover{
     box-shadow: 1px 2px 3px rgb(154, 151, 151);
     transform: translateY(-4px);
@@ -32,32 +34,23 @@
     border-radius: 20px;
     border:  1px solid rgb(84, 12, 178);
     outline:none ;
-    /* border-color: ; */
 }
 .search_inp:focus{
     outline:  1px solid rgb(117, 225, 135);
     border: none;
 }
-/* @media screen and (max-width:800px) {
-    body{
-       padding: 0%;
-    }
-} */
 ._newlesson{
     display: flex;
-    /* flex-direction: row; */
     justify-content: end;
 }
 @media screen and (max-width:500px){
   ._newlesson{
     display: flex;
     justify-content: center;
-    /* align-items: center; */
   }  
   ._newlessonF{
     display: flex;
     justify-content: center;
-    /* align-items: center; */
   }
 }
 .btn_style{
@@ -75,8 +68,10 @@
 }
 ._border{
     border: 1px solid transparent;
-    /* overflow: hidden; */
+    overflow: hidden;
+    padding: auto;
 }
+
 .teacher_icon_lesson{
     display: flex;
     justify-content: end;
@@ -95,4 +90,31 @@
 }
 .Elink:hover{
     color: orange;
+}
+/* notification */
+.notification {
+    position: fixed;
+    top: -100px; /* Start above the viewport */
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 15px;
+    background-color: #4caf50; /* Green background for success */
+    color: white;
+    border-radius: 5px;
+    transition: top 0.5s ease; /* Animation for sliding */
+    z-index: 2000; 
+}
+
+.notification.show {
+    top: 20px; /* Position when shown */
+}
+
+.notification.hide {
+    top: -100px; /* Position when hiding */
+}
+.notification.error {
+    background-color: #f44336; /* Red background for error */
+}
+.notification.orange {
+    background-color: green; /* Orange background for updates */
 }

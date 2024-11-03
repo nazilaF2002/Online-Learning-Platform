@@ -1,36 +1,6 @@
 import './about.css';
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faUserCheck } from '@fortawesome/free-solid-svg-icons';
-import { faImage } from '@fortawesome/free-solid-svg-icons';
-import { faHtml5 } from '@fortawesome/free-brands-svg-icons';
-import { faDatabase } from '@fortawesome/free-solid-svg-icons';
+import { courses } from './courses';
 export default function AboutUs(){
-    const courses=[
-        {
-          id:1,
-          icon:<FontAwesomeIcon icon={faHtml5}/>,
-          title:'Front-End',
-          description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus vero totam illum aut vitae temporibus'
-       },
-       {
-        id:2,
-        icon:<FontAwesomeIcon icon={faDatabase} />,
-        title:'Back-End',
-        description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus vero totam illum aut vitae temporibus'
-     },
-     {
-        id:3,
-        icon:<FontAwesomeIcon icon={faUserCheck} />,
-        title:'UI & UX',
-        description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus vero totam illum aut vitae temporibus'
-     },
-     {
-        id:4,
-        icon:<FontAwesomeIcon icon={faImage} />,
-        title:'Graphic',
-        description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus vero totam illum aut vitae temporibus'
-     },
-   ]
     return(
         <>
         <div className='p-5 about_bg'>
@@ -81,12 +51,12 @@ export default function AboutUs(){
                         </div>
                        
                     </div>
-                    <div className="col-12 text-center p-5">
-                     <div className="row p-md-5">
+                    <div className="col-12 text-center py-5">
+                     <div className="row p-md-5 ">
                         {courses.map((item)=>{
                             return(
-                                <div className="col-md-6 col-lg-3 mb-2" key={item.id}>
-                            <div className="offer rounded p-3 d-flex flex-column">
+                                <div className="col-md-6  col-lg-3 mb-2" key={item.id}>
+                            <div className="offer  rounded p-3 d-flex flex-column">
                                  <i className='i'>{item.icon}</i> 
                                  <h5>{item.title}</h5>
                                  <p>{item.description} </p>

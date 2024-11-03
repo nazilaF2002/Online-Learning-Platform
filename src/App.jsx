@@ -12,11 +12,11 @@ import StudentList from './components/Teachers/StudentList.jsx';
 import Profile from './components/Students/Profile.jsx';
 import Courses from './components/courses/course.jsx';
 import CRoot from './components/courses/CRoot.jsx';
-import Discuss from './components/Discuss/discuss.jsx';
 import Notifications from './components/Notifications/Notifications.jsx';
 import Edit from './components/EditPage/Edit.jsx';
 
 const router = createBrowserRouter([
+  // home routes
   {
     path: '/',
     element: <HRoot />,
@@ -33,7 +33,7 @@ const router = createBrowserRouter([
       {path: 'courses', element: <Courses/> },
     ]
    },
-  // the rout that work corectly
+  //  front course routes
   {path: 'lessons/front' , element:<SRoot/>,
     children:[
       {index:true , element :<Lessons/>},
@@ -42,12 +42,12 @@ const router = createBrowserRouter([
       {path: 'students' ,element:<StudentList/> },
       {path: 'profile/:id' , element: <Profile/>},
       {path: 'courses', element: <Courses/> },
-      {path: 'discuss', element:<Discuss/> },
       {path: 'notification',element:<Notifications/> },
       {path: 'edit/:id',element:<Edit/> },
     ]
    },
-   {path: 'lessons/backend' , element:<SRoot/>,
+  //  back-end course routes
+  {path: 'lessons/backend' , element:<SRoot/>,
     children:[
       {index:true , element :<Lessons/> },
       {path: ':id' , element :<LessonsDetails/> },
@@ -55,11 +55,11 @@ const router = createBrowserRouter([
       {path: 'students' ,element:<StudentList/> },
       {path: 'profile/:id' , element: <Profile/>},
       {path: 'courses', element: <Courses/> },
-      {path: 'discuss', element:<Discuss/> },
       {path: 'notification',element:<Notifications/> },
       {path: 'edit/:id',element:<Edit/> }
     ]
    },
+     //  uiux course routes
    {path: 'lessons/uiux' , element:<SRoot/>,
     children:[
       {index:true , element :<Lessons/> },
@@ -68,11 +68,11 @@ const router = createBrowserRouter([
       {path: 'students' ,element:<StudentList/> },
       {path: 'profile/:id' , element: <Profile/>},
       {path: 'courses', element: <Courses/> },
-      {path: 'discuss', element:<Discuss/> },
       {path: 'notification',element:<Notifications/> },
       {path: 'edit/:id',element:<Edit/> }
     ]
    },
+     //  graphic course routes
    {path: 'lessons/graphic' , element:<SRoot/>,
     children:[
       {index:true , element :<Lessons/> },
@@ -81,7 +81,6 @@ const router = createBrowserRouter([
       {path: 'students' ,element:<StudentList/> },
       {path: 'profile/:id' , element: <Profile/>},
       {path: 'courses', element: <Courses/> },
-      {path: 'discuss', element:<Discuss/> },
       {path: 'notification',element:<Notifications/> },
       {path: 'edit/:id',element:<Edit/> }
     ]

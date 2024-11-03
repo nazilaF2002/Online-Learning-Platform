@@ -12,6 +12,7 @@ export default function Home(){
         <AboutUs/>
         <Teachers/>
         <Testimonials/>
+        <Footer/>
       </div>
     </>
     );

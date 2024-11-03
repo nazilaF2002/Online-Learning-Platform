@@ -11,3 +11,18 @@ color: white;
 .border_color{
     border-color: #ba94f7;
 }
+@media (min-width:1024px){
+    ._custom_width{
+        width: 50%;
+    } 
+}
+@media (min-width:768px){
+    ._custom_width{
+        width: 70%;
+    } 
+}
+@media (max-width:767px){
+    ._custom_width{
+        width: 85%;
+    } 
+}
